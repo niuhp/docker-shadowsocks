@@ -1,7 +1,7 @@
 ### 直接使用镜像
 
 ```shell
-docker run --name shadowdocks -p 8000:8000 daocloud.io/niuhp/shadowdocks
+docker run --name shadowdocks -p 8000:8000 daocloud.io/niuhp/shadowsocks
 ```  
 
 默认配置如下  
@@ -24,6 +24,6 @@ docker run --name shadowdocks -p 8000:8000 daocloud.io/niuhp/shadowdocks
 ```shell
 docker run --name shadowdocks -p ${宿主机端口号}:${你配置文件中的端口号}\
  -v /path/to/your_config.json:/usr/local/shadowsocks/config.json:ro\
- daocloud.io/niuhp/shadowdocks
+ daocloud.io/niuhp/shadowsocks
 ```  
 
